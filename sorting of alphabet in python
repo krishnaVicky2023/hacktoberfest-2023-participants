@@ -1,0 +1,10 @@
+def sortWords(input_string):
+    words = input_string.split()
+    words.sort(key=str.lower)
+    sorted_string = " ".join(words)
+    return sorted_string
+ 
+# Test the function
+input_string = input("Enter a string of words: ")
+sorted_string = sortWords(input_string)
+print("Ouput:", sorted_string)
